@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Olhar de Mãe: guia e caderno de 14 dias para levar à consulta</title>
+<meta name="description" content="Um guia em PDF para anotar o que você observa no desenvolvimento do seu filho e chegar à consulta com informação organizada. Ainda em finalização: deixe seu e-mail para ser avisada.">
+<meta name="theme-color" content="#1D536D">
+<style>
+/* Layout: coluna única pensada para celular; faixa azul no topo com a promessa e o formulário logo abaixo da dobra */
+:root{
+  --ink:#1B2A36; --muted:#55636F; --line:#D5DDE3; --accent:#2A6F8F; --accent-dark:#1D536D;
+  --soft:#E9F2F6; --amber:#8A5A00; --amber-soft:#FBF1DC; --paper:#FFFFFF; --bg:#F5F7F9;
+  --ok:#1E7A4F; --bad:#A3352B;
+  --font:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+*{box-sizing:border-box}
+html{color-scheme:light;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 var(--font)}
+.wrap{max-width:680px;margin:0 auto;padding-left:max(18px,env(safe-area-inset-left,0px));padding-right:max(18px,env(safe-area-inset-right,0px))}
+header.top{background:var(--accent-dark);color:#fff;padding-top:max(28px,env(safe-area-inset-top,0px));padding-bottom:30px}
+.eyebrow{font-size:.74rem;letter-spacing:.1em;text-transform:uppercase;font-weight:600;opacity:.85;margin:0 0 14px}
+h1{font-size:clamp(2.1rem,8vw,3rem);line-height:1.08;margin:0 0 14px;font-weight:700;letter-spacing:-.01em}
+.lead{font-size:1.1rem;color:#D6E6EE;margin:0;max-width:34em}
+.ill{display:block;width:min(100%,360px);height:auto;margin:22px auto 0}
+main section{padding:34px 0 0}
+h2{font-size:1.4rem;line-height:1.2;margin:0 0 12px;color:var(--accent-dark)}
+p{margin:0 0 12px}
+ul{margin:0 0 6px;padding-left:22px}
+li{margin-bottom:8px}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:22px 20px}
+.card.form{border-color:var(--accent);box-shadow:0 2px 14px rgba(29,83,109,.12);margin-top:-16px;position:relative}
+.steps{display:grid;gap:14px;padding:0;list-style:none;margin:0}
+.steps li{display:grid;grid-template-columns:38px 1fr;gap:12px;margin:0}
+.steps b.n{width:34px;height:34px;border-radius:50%;background:var(--accent);color:#fff;display:flex;align-items:center;justify-content:center;font-size:1rem}
+label{display:block;font-weight:600;margin-bottom:6px}
+input[type=email]{width:100%;font:inherit;padding:14px 14px;border:1.5px solid #9AA9B5;border-radius:10px;background:#fff;color:var(--ink)}
+input[type=email]:focus{outline:3px solid #8EC3DA;border-color:var(--accent)}
+button{width:100%;margin-top:12px;font:inherit;font-weight:700;padding:15px 16px;border:0;border-radius:10px;background:var(--accent-dark);color:#fff;cursor:pointer}
+button:hover{background:#17465C}
+button:focus-visible{outline:3px solid #8EC3DA;outline-offset:2px}
+button[disabled]{background:#8A99A6;cursor:not-allowed}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
+.small{font-size:.88rem;color:var(--muted)}
+.consent{margin:12px 0 0}
+#msg{margin:12px 0 0;font-weight:600}
+#msg.ok{color:var(--ok)} #msg.err{color:var(--bad)}
+.price{background:var(--amber-soft);border-left:4px solid var(--amber);border-radius:0 10px 10px 0;padding:12px 16px;margin-top:18px;font-size:.95rem}
+details{border-top:1px solid var(--line);padding:14px 0}
+details:last-of-type{border-bottom:1px solid var(--line)}
+summary{font-weight:600;cursor:pointer}
+details p{margin:10px 0 0;color:var(--muted)}
+footer{padding:34px 0 max(40px,env(safe-area-inset-bottom,0px));color:var(--muted);font-size:.86rem}
+@media (min-width:700px){body{font-size:18px}}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="mae" viewBox="0 0 100 230">
+      <path d="M50 8a28 28 0 0 0-28 28q0 24 7 38q9-12 7-36h28q-2 24 7 36q7-14 7-38A28 28 0 0 0 50 8z" fill="#3B2A22"/>
+      <rect x="41" y="52" width="18" height="18" fill="#E8B48A"/>
+      <circle cx="50" cy="40" r="22" fill="#E8B48A"/>
+      <path d="M28 38a22 22 0 0 1 44 0q-22-14-44 0z" fill="#3B2A22"/>
+      <circle cx="42" cy="43" r="2.2" fill="#2B2B2B"/><circle cx="58" cy="43" r="2.2" fill="#2B2B2B"/>
+      <path d="M43 51q7 6 14 0" stroke="#8A4B3A" stroke-width="2" fill="none" stroke-linecap="round"/>
+      <circle cx="36" cy="49" r="3.5" fill="#F2A5A0" opacity=".55"/><circle cx="64" cy="49" r="3.5" fill="#F2A5A0" opacity=".55"/>
+      <path d="M27 72q23-9 46 0l13 112H14z" fill="currentColor"/>
+      <rect x="36" y="184" width="10" height="38" fill="#E8B48A"/><rect x="54" y="184" width="10" height="38" fill="#E8B48A"/>
+      <ellipse cx="40" cy="225" rx="10" ry="5" fill="#2B2B2B"/><ellipse cx="60" cy="225" rx="10" ry="5" fill="#2B2B2B"/>
+    </symbol>
+    <symbol id="crianca" viewBox="0 0 70 150">
+      <circle cx="35" cy="26" r="19" fill="#C98B5F"/>
+      <circle cx="19" cy="14" r="7" fill="#2B1D17"/><circle cx="51" cy="14" r="7" fill="#2B1D17"/><circle cx="35" cy="9" r="9" fill="#2B1D17"/>
+      <path d="M17 22a18 18 0 0 1 36 0q-18-9-36 0z" fill="#2B1D17"/>
+      <circle cx="29" cy="29" r="1.9" fill="#2B2B2B"/><circle cx="41" cy="29" r="1.9" fill="#2B2B2B"/>
+      <path d="M30 35q5 5 10 0" stroke="#7A3F2E" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+      <circle cx="24" cy="34" r="3" fill="#F2A5A0" opacity=".5"/><circle cx="46" cy="34" r="3" fill="#F2A5A0" opacity=".5"/>
+      <rect x="19" y="46" width="32" height="38" rx="9" fill="currentColor"/>
+      <rect x="19" y="80" width="32" height="18" rx="5" fill="#5B6B78"/>
+      <rect x="23" y="96" width="9" height="38" fill="#C98B5F"/><rect x="38" y="96" width="9" height="38" fill="#C98B5F"/>
+      <ellipse cx="27.5" cy="139" rx="9" ry="5" fill="#2B2B2B"/><ellipse cx="42.5" cy="139" rx="9" ry="5" fill="#2B2B2B"/>
+    </symbol>
+  </defs>
+</svg>
+
+<header class="top">
+  <div class="wrap">
+    <p class="eyebrow">Guia + caderno de 14 dias + roteiro da consulta</p>
+    <h1>Olhar de Mãe</h1>
+    <p class="lead">Anote o que você observa no desenvolvimento do seu filho e chegue ao pediatra com a informação organizada.</p>
+    <svg class="ill" viewBox="0 0 360 250" role="img" aria-label="Ilustração de uma mãe e seu filho de mãos dadas">
+      <ellipse cx="180" cy="243" rx="150" ry="8" fill="#17465C"/>
+      <g fill="#8EC3DA"><path d="M52 60l3 7 7 3-7 3-3 7-3-7-7-3 7-3z"/><path d="M318 96l2 5 5 2-5 2-2 5-2-5-5-2 5-2z"/><path d="M300 34l3 7 7 3-7 3-3 7-3-7-7-3 7-3z"/></g>
+      <use href="#mae" x="80" y="12" width="100" height="230" style="color:#F4B942"/>
+      <use href="#crianca" x="205" y="100" width="70" height="150" style="color:#8EC3DA"/>
+      <g fill="none" stroke="#E8B48A" stroke-width="9" stroke-linecap="round"><path d="M107 90q-12 32-7 64"/><path d="M153 90Q178 128 201 182"/></g>
+      <g fill="none" stroke="#C98B5F" stroke-width="8" stroke-linecap="round"><path d="M224 154Q208 168 202 182"/><path d="M251 154q10 18 6 36"/></g>
+      <path d="M180 66c-14-10-22-20-14-30 5-6 12-4 14 2 2-6 9-8 14-2 8 10 0 20-14 30z" fill="#F29BA6"/>
+    </svg>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section aria-labelledby="avisar">
+    <div class="card form">
+      <h2 id="avisar">Ainda estamos finalizando</h2>
+      <p>O guia ainda não está à venda. Deixe seu e-mail e avisamos quando ele sair.</p>
+      <form id="f" novalidate>
+        <label for="email">Seu e-mail</label>
+        <input id="email" name="email" type="email" inputmode="email" autocomplete="email" placeholder="nome@email.com" required>
+        <input class="hp" type="text" name="site" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <button type="submit" id="btn">Quero ser avisada</button>
+        <p id="msg" role="status" aria-live="polite"></p>
+        <p class="small consent" id="consent">Pedimos só o e-mail, nada sobre você ou sua criança. Usamos apenas para avisar do lançamento, e em cada aviso você poderá sair da lista.</p>
+      </form>
+      <div class="price">Preço previsto: <b>R$ 29,90</b>, pagamento único. Ainda não está à venda e o valor pode mudar.</div>
+    </div>
+  </section>
+
+  <section aria-labelledby="dentro">
+    <h2 id="dentro">O que vai no guia</h2>
+    <p>PDF de 27 páginas em A4, com ilustrações, para imprimir e preencher à mão.</p>
+    <ul>
+      <li><b>Marcos do desenvolvimento</b> de 2 meses a 5 anos, nas áreas social e linguagem. Para cada item: vi, às vezes ou ainda não.</li>
+      <li><b>Caderno de 14 dias</b> para anotar o que, quando e onde, com uma página de fechamento para levar à consulta.</li>
+      <li><b>Roteiro da consulta:</b> frases para abrir a conversa, perguntas para fazer e o que dizer quando a resposta é "calma, é cedo".</li>
+      <li><b>Carta pronta ao pediatra</b> e uma explicação do questionário M-CHAT-R/F da Caderneta da Criança.</li>
+      <li><b>Caminho no SUS e no plano de saúde</b>, com pasta de documentos e folha de protocolos.</li>
+      <li><b>Uma página para quem cuida.</b></li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="como">
+    <h2 id="como">Como funciona</h2>
+    <ol class="steps">
+      <li><b class="n" aria-hidden="true">1</b><div><b>Observe.</b> Confira os marcos da idade e marque o que você já viu.</div></li>
+      <li><b class="n" aria-hidden="true">2</b><div><b>Registre.</b> Por 14 dias, anote situações do dia a dia, sem interpretar. "Chamei três vezes e ele não olhou" vale mais do que "ele me ignora".</div></li>
+      <li><b class="n" aria-hidden="true">3</b><div><b>Leve à consulta.</b> Com o caderno, a Caderneta da Criança e o roteiro nas mãos.</div></li>
+    </ol>
+  </section>
+
+  <section aria-labelledby="duvidas">
+    <h2 id="duvidas">Perguntas</h2>
+    <details><summary>Isso faz diagnóstico?</summary><p>Não. O guia não diagnostica, não indica tratamento e não dá resultado sobre o seu filho. Ele ajuda você a observar, registrar e pedir avaliação. Quem avalia é o pediatra e a equipe de saúde.</p></details>
+    <details><summary>Serve para qual idade?</summary><p>Para crianças de 0 a 5 anos. Os marcos vão de 2 meses a 5 anos. Marque pela idade que seu filho tem hoje.</p></details>
+    <details><summary>É um formulário online?</summary><p>Não. É um PDF para baixar, imprimir e preencher à mão.</p></details>
+    <details><summary>De onde vêm as informações?</summary><p>De fontes públicas: CDC, Sociedade Brasileira de Pediatria, Ministério da Saúde, ANS e o texto das leis. O guia resume e reescreve esse conteúdo e indica onde conferir o original.</p></details>
+    <details><summary>O que acontece com o meu e-mail?</summary><p id="privacy">Ele fica guardado em uma planilha do Google, apenas para o aviso de lançamento. Não pedimos nome, dados da criança nem informação de saúde. Em cada aviso que enviarmos haverá um jeito de sair da lista.</p></details>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Olhar de Mãe é uma publicação independente. Não é do Ministério da Saúde, da SBP, do CDC nem da ANS, e não representa essas instituições.</p>
+    <p>Material informativo. Não faz diagnóstico, não indica tratamento e não substitui a avaliação de pediatra, neuropediatra, psicólogo ou outro profissional de saúde.</p>
+  </div>
+</footer>
+
+<script>
+/* Configuração do cadastro. Enquanto ENDPOINT estiver vazio, o botão fica desligado:
+   a página nunca finge que guardou um e-mail. */
+var CONFIG = {
+  tipo: "google",        // "google" (Formulário Google) ou "formspree"
+  endpoint: "https://docs.google.com/forms/d/e/1FAIpQLSdjKVz0it2lPaEBhGGbEEfksCJAD2Mmyq2NSfXVqoY5Ya7xYw/formResponse",
+  campo: "entry.901907788"
+};
+(function () {
+  var f = document.getElementById("f"), email = document.getElementById("email"),
+      btn = document.getElementById("btn"), msg = document.getElementById("msg");
+  var ativo = !!CONFIG.endpoint && (CONFIG.tipo !== "google" || !!CONFIG.campo);
+  function aviso(texto, cls) { msg.textContent = texto; msg.className = cls || ""; }
+  if (!ativo) { btn.disabled = true; btn.textContent = "Cadastro abre em breve"; }
+  f.addEventListener("submit", function (e) {
+    e.preventDefault();
+    if (!ativo) return;
+    if (f.site.value) return;                       // campo-armadilha para robôs
+    var v = email.value.trim();
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v)) { aviso("Confira o e-mail: parece incompleto.", "err"); email.focus(); return; }
+    btn.disabled = true; aviso("Enviando…");
+    var req;
+    if (CONFIG.tipo === "google") {
+      var corpo = new URLSearchParams(); corpo.append(CONFIG.campo, v);
+      req = fetch(CONFIG.endpoint, { method: "POST", mode: "no-cors", body: corpo });
+    } else {
+      req = fetch(CONFIG.endpoint, { method: "POST", headers: { "Accept": "application/json", "Content-Type": "application/json" }, body: JSON.stringify({ email: v }) })
+        .then(function (r) { if (!r.ok) throw new Error("falha"); });
+    }
+    req.then(function () {
+      aviso("Pronto. Avisamos por e-mail quando o guia sair.", "ok");
+      f.reset(); btn.textContent = "E-mail cadastrado";
+    }).catch(function () {
+      btn.disabled = false; aviso("Não consegui enviar agora. Tente de novo em instantes.", "err");
+    });
+  });
+})();
+</script>
+</body>
+</html>
